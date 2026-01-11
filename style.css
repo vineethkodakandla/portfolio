@@ -165,3 +165,166 @@ footer {
     .hero h1 { font-size: 2.5rem; }
     .navbar { flex-direction: column; gap: 15px; }
 }
+/* --- CONTACT PAGE STYLES --- */
+
+.contact-section {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.terminal-text {
+    font-family: var(--font-code);
+    color: var(--accent-secondary);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* The Glowing Glass Card */
+.glass-card {
+    background: rgba(15, 15, 15, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 60px 40px;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    /* Futuristic border corners */
+    clip-path: polygon(
+        0 0, 
+        100% 0, 
+        100% calc(100% - 20px), 
+        calc(100% - 20px) 100%, 
+        0 100%
+    );
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+/* Status Dot */
+.status-indicator {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #00ff88;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/* Name Typography */
+.glass-card h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #fff, var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role-title {
+    color: var(--text-muted);
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Email Box */
+.email-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-code);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.email-box:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-family: var(--font-code);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copy-btn:hover {
+    color: #fff;
+}
+
+.feedback-msg {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: #00ff88;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-bottom: 30px;
+}
+
+/* Social Buttons */
+.social-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-main);
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+}
+
+.social-btn:hover {
+    background: var(--text-main);
+    color: var(--bg-color);
+}
