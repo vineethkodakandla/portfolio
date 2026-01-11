@@ -23,3 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+/* --- CONTACT COPY FUNCTIONALITY --- */
+function copyEmail() {
+    const email = "vineethkodakandla@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+        // Show feedback message
+        const feedback = document.getElementById('copy-feedback');
+        feedback.style.opacity = '1';
+        
+        // Change button text temporarily
+        const btn = document.querySelector('.copy-btn');
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> COPIED';
+        
+        // Reset after 2 seconds
+        setTimeout(() => {
+            feedback.style.opacity = '0';
+            btn.innerHTML = originalHTML;
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
