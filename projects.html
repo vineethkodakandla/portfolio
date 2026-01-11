@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Vineeth Reddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">&lt;VR /&gt;</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link" style="color:var(--accent-color)">Projects</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>/ Global_Repository</h1>
+            <p class="subtitle">A complete archive of research, deployments, and open-source contributions.</p>
+            
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <header>
+                        <h3 style="color: var(--accent-secondary);">01. Network Intrusion Detection System</h3>
+                    </header>
+                    <br>
+                    <p><strong>The Challenge:</strong> Standard firewalls often miss low-frequency anomalous packets in high-throughput graduate networks.</p>
+                    <br>
+                    <p><strong>The Solution:</strong> Built a hybrid detection engine using Snort for signature matching and a Random Forest classifier for anomaly detection. Reduced false positives by 15%.</p>
+                    <br>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                        <span class="tech-tag">Wireshark</span>
+                    </div>
+                    <br>
+                    <a href="#" class="cta-btn" style="font-size: 0.8rem;">VIEW SOURCE</a>
+                </article>
+
+                <article class="project-card">
+                    <header>
+                        <h3 style="color: var(--accent-secondary);">02. Isaac Sim Robotic Arm</h3>
+                    </header>
+                    <br>
+                    <p><strong>The Challenge:</strong> Training reinforcement learning agents on physical hardware is expensive and risky.</p>
+                    <br>
+                    <p><strong>The Solution:</strong> Developed a high-fidelity digital twin in NVIDIA Isaac Sim. Successfully trained an agent to perform pick-and-place tasks before Sim2Real transfer.</p>
+                    <br>
+                    <div class="tech-stack">
+                        <span class="tech-tag">NVIDIA Isaac Sim</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Reinforcement Learning</span>
+                    </div>
+                    <br>
+                    <a href="#" class="cta-btn" style="font-size: 0.8rem;">VIEW SIMULATION</a>
+                </article>
+
+                 <article class="project-card">
+                    <header>
+                        <h3 style="color: var(--accent-secondary);">03. Forensics Image Analyzer</h3>
+                    </header>
+                    <br>
+                    <p><strong>The Challenge:</strong> Recovering fragmented JPEG headers from corrupted disk images manually is time-inefficient.</p>
+                    <br>
+                    <p><strong>The Solution:</strong> Automated the carving process using a custom Python script that identifies hex signatures and reconstructs file tables.</p>
+                    <br>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Hex Analysis</span>
+                        <span class="tech-tag">Kali Linux</span>
+                    </div>
+                    <br>
+                    <a href="#" class="cta-btn" style="font-size: 0.8rem;">VIEW SOURCE</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Vineeth Reddy. &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
